@@ -1,0 +1,661 @@
+
+/* Fonts style */
+
+
+
+@font-face {
+    font-family:'Helvetica';
+    src: url('../fonts/Helvetica Bold.eot');
+	src: url('../fonts/Helvetica Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Helvetica Bold.woff2') format('woff2'),
+		url('../fonts/Helvetica Bold.woff') format('woff'),
+		url('../fonts/Helvetica Bold.svg#Helvetica Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'HelveticaNeueLT W1G 55 Roman';
+    src: url('../fonts/HelveticaNeueLT W1G 55 Roman.eot');
+	src: url('../fonts/HelveticaNeueLT W1G 55 Roman.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HelveticaNeueLT W1G 55 Roman.woff2') format('woff2'),
+		url('../fonts/HelveticaNeueLT W1G 55 Roman.woff') format('woff'),
+		url('../fonts/HelveticaNeueLT W1G 55 Roman.svg#HelveticaNeueLT W1G 55 Roman') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* // End Fonts style */
+
+/*font-family: 'Yantramanav', sans-serif;*/
+
+/*font-family: 'Roboto', sans-serif;*/
+
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+ul{ 
+    list-style: none;
+}
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+.clear:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
+a img{
+    border:0;
+}
+a,input,select,textarea{
+    outline:none;
+}
+input::-moz-focus-inner{
+    border:0; padding: 0;
+}
+
+img{
+    float: left;
+}
+
+/* Selection colours (easy to forget) */
+
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+a{text-decoration: none; display: inline-block;}
+/*a:hover{text-decoration: underline; -webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; transition: all .2s ease-in-out;}*/
+
+
+
+/*		Default Layout 
+-------------------------------------------------------------------------------
+*/
+
+body {background: #eff4f8; color: #333333; -webkit-text-size-adjust: 100%; -moz-text-size-adjust:100%; -moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased; overflow-x: hidden; overflow-y:auto;font-family: 'Yantramanav', sans-serif;font-weight: 400; font-style: normal; font-size: 20px; line-height: 26px;}
+
+*{-webkit-box-sizing: border-box;-moz-box-sizing:border-box; box-sizing: border-box;}
+
+
+/* =====================  Beginning Common Style ============== */
+h1{font-size: 45px;line-height: 55px; }
+h4{font-size: 26px; line-height: 32px; }
+h5{font-size: 22px; line-height: 26px; }
+h6{font-size: 19px;line-height: 23px;}
+h2{font-size: 37px; line-height: 45px; }
+a.btn{text-align: center; width: 340px; height: 70px; color: #ffffff; font-weight: 500; font-size: 26px; line-height: 34px; padding: 18px 0;-webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; transition: all .2s ease-in-out;}
+a.yellow-btn{background: #ffcc00;}
+a.yellow-btn:hover{background: #eabf13;-webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; transition: all .2s ease-in-out;}
+.blue-btn{background: #2b8fdb; color: #ffffff}
+.blue-btn:hover{background: #13598e; color: #ffffff;-webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; transition: all .2s ease-in-out;}
+.btn-wrap{float: left;width: 100%; padding-top: 72px; text-align: center;  }
+a.transparent-btn{background: transparent;font-size: 18px; line-height: 22px; width: 180px; height: 50px;color: #444444; border: 1px solid #e3e3e3 }
+.yellow-color{color: #ffcc00}
+.input-row input[type="submit"]:hover,.button-wrap button:hover{background:#e2bc23;-webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; transition: all .2s ease-in-out; }
+a.transparent-btn:hover{ background:#ffcc00;color: #ffffff; border: 1px solid #ffcc00; }
+/* ================= // End Common Style ============== */
+
+/* ================= Beginning  Home Page Style ==================== */
+.main-wrap{float:left; width: 100%; position: relative; overflow: hidden;}
+header,nav,footer,section{float: left;width: 100%; }
+.common-wrap{margin: 0 auto; max-width: 1240px; padding: 0 20px}
+.header-wrap{float: left; width: 100%; background: #ffffff; }
+.logo-wrap{float: left;width: 373px;padding: 51px 0 49px; position: relative}
+.main-logo{float: left;width: 100%;  }
+.main-logo figure{float: left;width: 80px; padding-top: 8px; }
+.main-logo figure img{float: left;width: 100% }
+.main-logo h4{float: left; width:-webkit-calc(100% - 80px);width:calc(100% - 80px); text-align: right;color:#2c89d7;font-family:'Helvetica';font-weight: 700;  }
+.main-logo span{ float: right; text-align: right; color: #787878; font-weight: 500; font-size: 16px; line-height: 14px; padding-right: 7px; }
+.main-nav{float: right; width: auto; padding-left: 20px;margin-top: 60px; }
+.main-nav ul{list-style: none; margin: 0;padding: 0; }
+.main-nav ul li{float:left;display: inline-block;margin: 0 21px; }
+.main-nav ul li:last-child{margin-right: 0px;}
+.main-nav ul li a{display: inline-block;font-size: 27px; line-height: 32px; color: #343434;font-weight: 400;   }
+.main-content-section{padding: 45px 0 100px;}
+.home-content{padding: 0;}
+.hero-section{float: left;width: 100%; background-repeat: no-repeat; background-position: center center; background-size: cover; min-height: 600px;position: relative; }
+.hero-content-info{float: left;width: 100%; padding-top: 61px;position: relative; z-index: 5; text-align: center;}
+.hero-content-info h2,.hero-content-info h1,.hero-content-info h3{text-align: center; float: none; font-weight: 100; color: #ffffff;padding-top: 13px; }
+.hero-content-info h1{font-weight: 700; }
+.hero-content-info h3{font-weight: 500;font-size: 38px; line-height: 46px;}
+.hero-section:before{position: absolute; left: 0; top: 0;width: 100%; height: 100%; content: ''; background: rgba(42,142,217,0.9);z-index: 1}
+.hero-content-info span{text-align: center; display:inline-block; padding-top: 51px;font-size: 26px; line-height: 40px; font-weight: 300; color: #ffffff}
+.content-inner-wrap{background: #ffffff; padding: 30px 0 56px;}
+.content-brief-info{float: left;width: 100%; }
+.content-item{float: left; max-width: 350px; width:29.16666666666667%;margin-left:6.25%;padding: 24px 15px 70px;position: relative}
+.content-item:nth-child(3n+1){margin-left:0px; }
+.content-item:before{position: absolute; left: -32px; top: 0; width: 1px; height: 100%; content: ''; background:#f4f4f4;z-index: 2; }
+.content-item:nth-child(3n+1):before{display: none}
+.title-thumb{margin: 0 auto; clear: both; max-width: 147px; height: 147px; border-radius: 100%; padding: 8px; position: relative;background: #dddddd}
+.title-thumb img{width: 100%; border-radius: 100%}
+.title-text{float: left; width: 100%;text-align: center;}
+.home-content .title-text{ padding-top: 20px; }
+.title-text p{float: left; width: 100%; padding-top: 18px;text-align: center;font-size: 18px;line-height: 26px; }
+.content-item .title-text p{color: #aeaeae }
+.content-item .title-text h4{color: #444444 }
+.encryption-text-wrap{float: left; width: 100%; }
+.encryption-info{float: left;width: 100%; margin-top: 26px; padding: 28px 200px 53px; background:#eff4f8;position: relative}
+.encryption-info .title-text h4{color: #323335}
+.encryption-info .title-text p{color: #868a8d}
+.encryption-info .title-text{padding-top: 11px;}
+.design-icon{float: left; width: 73px;position: absolute; left: 115px; top: 28px; z-index: 5; }
+.design-icon img{width: 100% }
+.encryption-text-wrap .btn-wrap{padding-top: 40px;}
+/* ================= // End Home Page Style ==================== */
+
+/* ================= Beginning Current Application Page Style ==================== */
+.current-application-content{padding-bottom: 118px;}
+.current-application-content .content-inner{margin-top: 0;}
+.current-application-content .title-text h2{ font-size: 36px; line-height: 44px; color: #ffcc00;}
+.current-application-content .title-text p{padding-top: 10px;}
+.content-info{float: left; width: 100%; padding-top: 59px; /*margin-left:37px*/}
+.current-application-content .title-bar{float: left; width: 100%; padding: 13px 22px 6px 24px; background:#0263ac; font-size: 0px; line-height: 0px;}
+.title-bar span{display: inline-block;vertical-align: middle; color: #ffffff; text-transform: uppercase; font-size: 16px;line-height: 20px; font-weight: 700; text-align: center;position: relative; }
+.title-bar span:first-child{width:18.760907504363%;text-align: left;}
+.title-bar span:nth-child(2){width: 14.13612565445026%;}
+.title-bar span:nth-child(3){width: 9.773123909249564%;}
+.title-bar span:nth-child(4){width:10.90750436300175%;}
+.title-bar span:nth-child(5){width:9.860383944153578%;}
+.title-bar span:nth-child(6){width: 11.34380453752182%;}
+.title-bar span:nth-child(7){width: 19.10994764397906%;}
+.title-bar span:nth-child(8){width: 6.108202443280977%;}
+.application-info-wrap{float: left;width: 100%; }
+.current-application-content .content-details-wrap .title-text{padding-top: 0px;}
+.current-application-content .content-details-wrap .title-text p{padding-top: 5px;}
+.current-application-content .content-details-wrap .common-wrap{max-width: 1232px}
+.info-row{float: left;width: 100%; padding: 0 34px 0 24px;  background: #efefef;display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-flex-flow: row wrap; -webkit-box-pack: justify; -moz-box-pack: justify; -ms-flex-pack: justify;position: relative}
+.info-row:nth-child(even){background: #ffffff; }
+.info-row:first-child div span{padding: 8px 5px;}
+.info-row div{float: left; width: 18.69488536155203%; position: relative; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; align-items: center;}
+.info-row div:nth-child(2):before{display: none}
+.info-row div span{text-align: center; display: inline-block; font-size: 15px; display: table-cell; vertical-align: middle; line-height: 24px; font-weight: 400; color: #333333; position: relative; padding: 14px 5px; text-align: center; width: 100%;}
+.info-row div:before{position: absolute; left: 0;top: 0; width: 2px;height:-webkit-calc(100%); height: calc(100%);content: ''; z-index: 5; background: #ffffff; }
+.info-row div span dfn{font-style: normal;text-align: center;}
+.info-row div:nth-child(2) span{margin-left: 0px;text-align: left}
+.info-row div:nth-child(4){width:14.28571428571429%; }
+.info-row div:nth-child(6){width:9.876543209876543%; }
+.info-row div:nth-child(8){width:11.02292768959436%; }
+.info-row div:nth-child(10){width:9.964726631393298%; }
+.info-row div:nth-child(12){width:11.46384479717813%; }
+.info-row div:nth-child(14){ text-align: center;width: 19.31216931216931%;}
+.info-row div.close{float: left;width: 5.291005291005291%; display: block}
+.info-row div span a{text-decoration: underline; color: #0000ff;-webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ease; transition: all 0.3s ease}
+.info-row div span a.submit-now{text-decoration: none; width: 177px; border: 1px solid #e8e8e8; background: #ffffff; padding:5px 15px;  text-align: center;color: #444444; border-radius: 5px;font-size: 14px; line-height: 20px;}
+/*.info-row div:nth-child(even) span a.submit-now{border: 1px solid #ffffff;}*/
+.info-row div:first-child span{text-align: left; padding-left: 0px;}
+.info-row div span a.view-list{text-align: center; color: #ffffff; padding: 5px 12px; background: #000000; border-radius: 5px; text-decoration: none; font-size: 14px;line-height:20px; font-weight: 500;}
+.info-row div span a img{margin-top: 5px;}
+div.close-icon{float: right; width: 25px; height: 25px; cursor: pointer; position: relative; top: 50%; margin-top: -12.5px; display: block; vertical-align: middle;}
+div.close-icon img{float: left; width: 100%;}
+div.close-icon:before{display: none}
+.info-row em{font-style: normal; font-size: 14px; line-height: 20px; font-weight: 500;display: none; visibility: hidden; height: 0; opacity: 0}
+.content-inner{float: left; width: 100%;margin-top: 65px; -webkit-box-shadow: 0px 3px 8px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 3px 8px -3px rgba(0,0,0,0.75);
+box-shadow: 0px 3px 8px -3px rgba(0,0,0,0.75);}
+/* ================= // End Current Application Page Style ==================== */
+
+/* ================= Beginning My Lenders Page Style ==================== */
+.my-lenders-content .info-row{padding: 0 22px 0 28px;}
+.my-lenders-content .info-row {padding: 0 22px 0 28px;}
+.my-lenders-content .content-details-wrap .common-wrap{max-width: 1230px;}
+.my-lenders-content .info-row div:first-child{width:30.43859649122807%; }
+.my-lenders-content .info-row div:first-child:before{display: none}
+.my-lenders-content .info-row div:nth-child(2):before,.my-lenders-content .info-row div:nth-child(3):before,.my-lenders-content .info-row div:nth-child(4):before{left: 0; display: block}
+.my-lenders-content .info-row div:nth-child(2){width:41.84210526315789%;padding-left: 6.578947368421053%}
+.my-lenders-content .info-row div:nth-child(3){width:22.80701754385965%;padding-left: 4.210526315789474% }
+.my-lenders-content .info-row div:nth-child(4){width:4.912280701754386%;padding-left:2.456140350877193%; }
+.my-lenders-content .info-row div:nth-child(4) div.close-icon{width: 25px; /*margin-top: 0px;*/ }
+.my-lenders-content .info-row:first-child div span { padding: 21px 5px;}
+.my-lenders-content .info-row div span{ padding: 21px 5px; text-align: left}
+.my-lenders-content .info-row div:first-child span{ padding: 14px 5px;}
+.info-row div span a:hover{text-decoration: none;-webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ease; transition: all 0.3s ease}
+.add-lender-info{float: left; width: 100%;margin-top: 30px; }
+.add-lender{float: left; width: auto; position: relative;}
+.add-lender label{float: left; display: inline-block; font-size: 18px;line-height: 27px;font-weight: 400;font-family: 'Roboto', sans-serif;color: #333333;padding-left: 40px;background-image: url(../images/plus-icon.png); background-repeat: no-repeat; background-position: left center; background-size: 25px; cursor: pointer; }
+.lender-search-wrap{float: left; clear: both; max-width: 507px; width: 100%; padding: 27px 38px 35px;background: #545454; display: none}
+.lender-search-wrap h6{float: left;width: 100%;font-size: 20px; color: #ffffff;}
+.lender-search-wrap p{float: left; color: #ffffff; width: 100%; padding-top: 26px;}
+.lender-search{float: left; width: 100%;margin-top: 10px;}
+.lender-search-wrap a{color: #008bf1; display: inline-block;position: relative;}
+.lender-search-wrap a:before{position: absolute; left: 0; bottom: 0; width: 100%; content: ''; height: 1px; background:#008bf1;z-index: 2;opacity: 1;-webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ease; transition: all 0.3s ease }
+.lender-search-wrap a:hover:before{opacity: 0;-webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ease; transition: all 0.3s ease}
+.lender-search input[type="search"]{float: left; width: 100%; background: #ffffff; height: 47px; font-size: 18px; line-height: 24px; padding: 11.5px 20px;font-family: 'Roboto', sans-serif;color: #333333;border: 0;    }
+.my-lenders-content .content-info .content-inner:first-child{margin-top: 0px;}
+.show-info label{background-image: url(../images/mainus-icon.png); background-repeat: no-repeat; background-position: left center; background-size: 25px;}
+.my-lenders-content .title-text,.my-lenders-content .title-text p{padding-top: 0px;}
+.my-lenders-content .content-info{padding-top: 68px;}
+/* ================= // End My Lenders Page Style ==================== */
+
+/* ================= Beginning Retailer Admin Page Style ==================== */
+.retailer-admin-content{padding-bottom: 171px;}
+.admin-details-wrap{float: left;width: 100%; padding-top: 31px;}
+.article-info{margin: 0 auto; max-width: 1076px; clear: both; background: #ffffff; overflow: hidden;-webkit-box-shadow: 0px 3px 8px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 3px 8px -3px rgba(0,0,0,0.75);
+box-shadow: 0px 3px 8px -3px rgba(0,0,0,0.75);}
+.title-bar{float: left;width: 100%; padding:16.5px 32px;background: #0263ac;  }
+.title-bar h5{float: left;width: 100%; text-transform: uppercase; color: #ffffff; font-weight: 700;}
+.admin-info{float: left; width: 100%; padding: 0 43px 0 35px; }
+.admin-info .content-item{float: left; width: 20%; margin: 0 3.333333333333333%; padding: 35px 0 50px; text-align: center}
+.admin-info .content-item:nth-child(4n+1){margin-left: 0px;}
+.admin-info .content-item:nth-child(4n+4){margin-right: 0px;}
+.admin-info .content-item .title-thumb{width:135px; height: 135px; padding: 5px;}
+.admin-info .content-item a.transparent-btn{padding: 14px 0;}
+.admin-info .content-item .title-text p{font-size: 16px; line-height: 20px; padding-top: 10px; color: #525252}
+.admin-info .content-item .title-text h5{font-size: 20px; line-height: 24px; color: #444444;}
+.admin-info .content-item .title-text{min-height: 124px;}
+.admin-info .content-item:nth-child(4n+1):before,.admin-info .content-item:first-child:before{display: none}
+.admin-info .content-item:nth-child(4):before{display: block}
+.admin-info .content-item .title-thumb img{border-radius: 0}
+.title-thumb-info{float: left; width:126px; height: 126px; border-radius: 100%; background: #ffcc00;position: relative;}
+.title-thumb figure{ width: 70px; clear: both; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); transform: translate(-50%, -50%); position: absolute;}
+.retailer-admin-content .title-text{padding-top: 0px;}
+.retailer-admin-content .content-item .title-text{padding-top: 23px;}
+/* ================= // End Retailer Admin Page Style ==================== */
+
+/* ================= Beginning Dealers Page Style ==================== */
+.content-wrap{float:left; width:100%; padding-top:33px; /*margin-left: 45px;*/}
+.content-text{float:left; width:46.83333333333333%; padding:0 20px 0 0}
+.content-text p{float:left;width: 100%; padding-top:24px; font-size: 18px;line-height: 27px;font-weight: 400;}
+.content-text h4{font-size: 30px; line-height: 36px; color: #333333;}
+.content-text ol{display: inline-block; counter-reset: list}
+.content-text ol li{float: left;font-size: 18px; line-height: 26px;padding-top:21px; list-style: none; font-weight: 400}
+.content-text ol li a{color: #333333;}
+.content-text ol li a:hover{text-decoration: underline;}
+.content-text ol li:before{content:counter(list) ".";margin-right: 8px; counter-increment: list; font-size: 28px; font-weight: 700}
+.thum-nail-wrap{float:left; width: 53.16666666666667%; text-align: center; padding-top:56px}
+.thum-nail-wrap figure,.thum-nail-wrap figure img{float:left; width: 100%; }
+.thum-nail-wrap a.yellow-btn{width: 378px;font-size: 22px;line-height: 26px;padding: 21.5px 10px;height: 67px;color: #633300}
+.thum-nail-wrap .btn-wrap{padding-top: 56px;}
+.login-here{float:left; width:100%;padding-top:44px; }
+.login-here p{float:left; width:100%;font-size: 20px; line-height: 24px; font-weight: 300;color: #333333}
+.login-here a{ font-size: 20px; line-height: 24px; font-weight: 300;color:#2626ff; padding-left: 3px}
+.login-here a:hover{ border-bottom: 1px solid #8891fa}
+.dealer-content .title-text{padding-top: 0px;}
+.dealer-content .title-text h2{font-size: 36px;}
+.dealer-content .title-text p{color: #333333}
+.dealer-content {padding-bottom: 170px;}
+/* ================= // End Dealers Page Style ==================== */
+
+/* ================= Beginning Account Setting Page Style ==================== */
+.account-setting .common-wrap,.retailer-register .common-wrap,.retailer-register2 .common-wrap,.add-lender-content .common-wrap,.company-info .common-wrap { max-width: 1010px; }
+.account-setting .title-text{padding-top: 5px;}
+.account-setting .content-inner{margin-top: 70px;}
+.content{float:left; width: 100%; background: #ffffff; padding:46px 50px 39px 45px;box-shadow: 1px 3px 2px 0 #aaaeb1;}
+.input-row{float:left; width:47.08571428571429%; margin-left: 5.828571428571429%;margin-top:37px }
+.input-row:nth-child(2n+1){margin-left: 0px; }
+.input-row:nth-child(-n+2){margin-top:0 }
+.input-row label{float:left; width: 100%;font-size: 18px; line-height: 22px; font-weight: 500; color: #333333;  }
+.input-row  input, .input-row input[type="text"],.input-row  input[type="email"],.input-row  input[type="password"],.input-row  input[type="search"],input[type="search"],.input-row .selectric  { float: left; width: 100%;height: 54px; border: 3px solid #dddddd;padding:0 14px; color: #777777; font-size: 18px; line-height: 22px;font-family: 'Yantramanav', sans-serif;font-weight: 400;}
+.submit-wrap{ width: 191px; margin-right: 0; margin-top: 45px; margin-left:3px; }
+.input-row input[type="submit"]{width: 159px; height: 53px; background-color: #ffcc00; font-size: 22px; line-height: 53px; color: #633300; border: none; text-align: center;cursor: pointer;-webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; transition: all .2s ease-in-out; font-weight: 500;}
+.account-setting .content input[type="submit"]{width:191px; }
+/* ================= // End Account Setting Page Style ==================== */
+
+/* ================= Beginning Find Dealer Page Style ==================== */
+.find-dealers .common-wrap{max-width: 910px;}
+.find-dealers .content p{font-weight: 400}
+.find-dealers .title-text{padding-top: 8px;}
+.find-dealers .title-text p{padding-top: 5px;}
+.find-dealers .content-inner{margin-top: 62px;}
+.find-dealers .content { padding: 36px 50px 55px 45px;}
+.find-dealers .content-inner{margin-top: 51px;}
+.dealer-submit-wrap{float: left; max-width: 514px; width: 100%; }
+.dealer-submit-wrap .input-row { float: left; max-width:329px;width: 64.00778210116732%; padding: 30px 0 0 0;}
+.dealer-submit-wrap  .submit-wrap {padding-top:54px;width: 160px; margin-left:4.474708171206226% }
+.dealer-submit-wrap  .submit-wrap input[type="submit"]{background-image: url(../images/search-icon.png); background-repeat: no-repeat; background-position: left 30px center; text-align: left; padding-left: 74px; }
+.content dfn{float:left;width:100%; padding-top:23px;font-size: 18px; line-height: 27px; font-weight: 400; color: #0263ac; font-style: normal;}
+.button-wrap{float: left; width: 100%; }
+.button-wrap button{float:left; width:110px; height:54px; font-size: 22px; color:#633300; line-height: 54px; background-color: #ffcc00;border:none; margin:40px 0 0 27px; font-family: 'Yantramanav', sans-serif;font-weight: 500; outline: none; cursor: pointer;}
+.button-wrap button:first-child{margin-left:0px}
+/* ================= // End Find Dealer Page Style ==================== */
+
+/* ================= Beginning Retailer Register Page Style ==================== */
+.retailer-register .content-inner{margin-top: 49px;}
+.retailer-register .input-row input[type="submit"]{width: 193px;}
+.retailer-register .title-text p{padding-top: 0px;font-weight: 500;}
+.retailer-register .title-bar,.account-setting .title-bar,.find-dealers .title-bar{padding: 16.5px 49px}
+/* ================= // End Retailer Register Page Style ==================== */
+
+/* ================= Beginning Retailer Register2 Page Style ==================== */
+.phone-number{float:Left;width: 71.35922330097087%; width:-webkit-calc(100% - 115px ); width:calc(100% - 115px );}
+.extension{float:Left;width: 27.9126213592233%; width: 97px; margin-left: 4.368932038834951%}
+/*.input-row .selectric{float: left;width: 100%; }*/
+.input-row .selectric .label{float: left; width: 100%; padding: 14px 0; font-size: 18px;line-height: 22px; font-weight: 500; color: #777777; }
+.input-row .selectric .button{background-image: url(../images/selectric-arrow.png); background-repeat: no-repeat; background-position-x: right 20px;background-position-y:center;  background-position:  right 20px center; background-size: 15px; height: 100%;}
+.input-row .selectric-items{top: 82px;}
+.input-row .selectric-items li:hover{background: #dddddd; color: #333333}
+.input-row .selectric{padding-right: 44px;}
+.selectric-open .selectric .button{background-image: url(../images/selectric-arrow-open.png); background-repeat: no-repeat; background-position:  right 20px center; background-size: 15px;} 
+.file-select p{float: left; width: auto; font-size: 18px;line-height: 22px; font-weight: 500; color: #333333; display: inline-block;position: relative}
+.file-select > div{position: relative;margin-left:60px; }
+.file-select > div > input[type="file"]{position: absolute; left: 0;top: 0; width: 100%; height: 100%; opacity: 0;z-index: 2; cursor: pointer}
+.file-select > div > span{float: left;display: inline-block;font-style: normal;font-family: 'Yantramanav', sans-serif;font-weight: 400; width: 170px;background: #dddddd; text-align: center; border: 0;color: #333333; height: 53px;padding: 15px 0; font-size: 18px;line-height: 22px;cursor: pointer; position: relative;}
+.file-select{display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-flex-flow: row wrap; -webkit-box-pack: justify; -moz-box-pack: justify; -ms-flex-pack: justify; -webkit-box-align: center; align-items: center;}
+.retailer-register2 .input-row.submit-wrap{float: left; width: 193px; margin-top: 60px;margin-left: 0px;clear: both}
+.retailer-register2 .title-text p,.add-lender-content .title-text p,.retailer-register2 .title-text p{font-weight: 500;}
+.retailer-register2 .title-text p{padding-top: 0px;}
+.retailer-register2 .content-inner{margin-top: 36px;}
+.retailer-register2 .content { padding-top: 57px;}
+.retailer-register2 .input-row{margin-top: 46px;}
+.retailer-register2 .input-row:nth-of-type(-n+2){margin-top: 0px;}
+.retailer-register2 .title-bar,.add-lender-content .title-bar{padding-left: 50px;}
+/* ================= // End Retailer Register2 Page Style ==================== */
+
+
+/* ================= Beginning Add Lender Page / Company-info Page  Style ==================== */
+.add-lender-content .input-row{margin-top: 43px;}
+
+.input-row figure{float: left;width:65.04854368932039%; }
+.input-row figure img{float: left;width:100% }
+.company-info .file-select label{margin-left: 24px;}
+.company-info .submit-wrap{clear: both}
+.company-info .content-inner{margin-top: 62px;}
+.company-info .content{padding-top: 55px}
+.company-info .input-row{margin-top: 44px;}
+.company-info .input-row:nth-of-type(-n+2){margin-top: 0px;}
+/* ================= // End Add Lender Page Style ==================== */
+
+.phone-nav{position: absolute; right:20px; top: 29px; width: 23px; z-index: 5; display: none}
+.phone-nav > div{float: left; width: 100%; height: 3px; margin-top: 3px; background: #000000; }
+.phone-nav > div:first-child{margin-top: 0px;}
+
+
+/* =========== Beginning Footer Section ============= */
+.footer-section{position: relative; }
+.footer-top{float: left; width: 100%; background-repeat: no-repeat; background-position: center center; background-size: cover; position: relative; padding:80px 0 46px;}
+.footer-logo{float: left; margin-left: 30px; width: 320px;}
+.footer-logo figure{float: left;width: 56px;}
+.footer-logo figure img{width: 100%;}
+.footer-logo h4{color: #ffffff;float: left; width: 240px; font-size: 23px;padding-left: 17px; font-weight: 500}
+.footer-top:before{position: absolute; left: 0; top: 0; width: 100%; height: 100%; content: ''; background: rgba(10,78,127,0.9); z-index: 1;}
+.footer-top .common-wrap{position: relative; z-index: 2;}
+.footer-nav{float:right; width: 50%; padding-left: 23px}
+.footer-nav ul{list-style: none; margin: 0; padding: 0;}
+.footer-nav ul li{float: left; display: block;margin-top: 14px; clear: both;}
+.footer-nav ul li:first-child{margin-top: 0px;}
+.footer-nav ul li a{float: left; display: inline-block;font-size: 18px; line-height: 24px; color: #ffffff;position: relative;font-family: 'Yantramanav', sans-serif; font-weight: 400;}
+.footer-nav ul li a:before{content: attr(title);height: 1px; margin-bottom: -1px;font-family: 'Yantramanav', sans-serif; font-weight: 700;z-index: 2;opacity: 0; visibility: hidden;-webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ease; transition: all 0.3s ease; display: block}
+.footer-nav ul li a:hover:before,.footer-nav ul li.current-item a{opacity: 1;font-family: 'Yantramanav', sans-serif;font-weight: 700; visibility: visible;-webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ease; transition: all 0.3s ease;}
+.copyright{float: left; width: 100%;  position: relative; z-index: 5; padding: 10px 0; background: #053e69;}
+.copyright p{float: left; width: 100%;  font-size: 20px; color: #ffffff;line-height: 25px; font-weight: 500;}
+.copyright p a{display: inline-block;color: #ffffff;margin-left: 5px; }
+.copyright p a:hover{text-decoration: underline}
+.copyright .common-wrap{padding-left: 63px;}
+
+.login-content{padding-bottom: 155px;}
+.login-content .common-wrap{max-width: 1010px;}
+.login-content .input-row input[type="submit"]{width: 192px;}
+.login-content .submit-wrap{margin-top: 30px;}
+.forgot-area{float: left; width: 100%; padding-top: 80px; color: #555555;}
+.forgot-area h5{text-transform: uppercase;}
+.forgot-area label{float: left; width: 100%; padding-top: 20px; color: #555555;}
+.forgot-area .input-row{max-width: 412px;}
+.forgot-area .submit-wrap{float: left; width: 110px; margin-left: 16px; margin-top: 42px; clear: none;}
+.forgot-area .submit-wrap input[type="submit"]{width: 100%;}
+/* =======================================================================================================
+============================================ Responsive style ========================================== */
+
+/*		Mobile Layout: 320px and 480px and more but less than or equal to 767px.
+----------------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    input[type="text"],input[type="email"],input[type="tel"],input[type="search"],input[type="number"],input[type="submit"],input[type="password"],select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none; border-radius: 0}
+    
+    .phone-nav{display: block}
+    .logo-wrap{width: 100%; padding: 10px 20px;}
+    .main-logo figure{width: 45px;}
+    .main-logo h4{width:-webkit-calc(100% - 45px);width:calc(100% - 45px);}
+    .main-logo{width: 100%; max-width: 202px;}
+    .main-logo h4{font-size: 14px; line-height: 20px;padding-top: 8px;}
+    .main-logo span{font-size: 12px; }
+    .main-nav{width: 100%; padding: 0; margin: 0; }
+    .header-wrap .common-wrap{padding: 0;}
+    .main-nav ul li{width: 100%; margin: 5px 0;}
+    .main-nav ul{text-align: center; display: inline-block; width: 100%}
+    .main-nav ul li a{text-align: center; }
+    .main-nav{display: none; height: 90%; height:-webkit-calc(100vh - 69px); height: calc(100vh - 69px); max-height: 88vh; overflow-y: auto; padding: 20px 0;}
+    .header-wrap{position: fixed; left: 0; top: 0; z-index: 100; }
+    .main-content-section {margin-top: 69px; padding-bottom: 40px;}
+    .home-content{background: #ffffff;}
+    .content-inner-wrap{padding-bottom: 0;}
+    .hero-content-info{padding-top: 30px;}
+    h2{font-size: 26px; line-height: 30px;}
+    h1{font-size: 33px;line-height: 45px; }
+    .hero-content-info h3{font-size: 24px; line-height: 30px;}
+    .btn-wrap{padding-top: 30px;}
+    a.yellow-btn{width: 100%;}
+    .hero-content-info span{padding-top: 30px; font-size: 25px; line-height: 30px;}
+    .hero-section{min-height: 466px;}
+    .content-item,.content-item:nth-child(3n+1){float: none;width: 100%; padding: 0; margin: 0 auto; margin-top: 40px; overflow: hidden; }
+    .content-item:first-child{margin-top: 0px;}
+    .encryption-info{padding: 30px 20px;}
+    .design-icon{position: relative; top: auto; left: auto; left: 50%; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); transform: translateX(-50%);}
+    a.btn{width: 280px;}
+    .footer-top{padding: 40px 0 20px;}
+    .footer-logo{margin-left: 0; width: 100%; text-align: center;}
+    .footer-logo figure{width: 50px;}
+    .footer-logo h4{font-size: 21px; width: 230px; padding-left: 10px;}
+    .footer-nav{float: none; text-align: center; padding: 0; margin-top: 15px; width: 100%; overflow: hidden}
+    .footer-nav ul li,.footer-nav ul li:first-child{text-align: center;float: none;display: inline-block; clear: none; margin: 5px 7px 0;}
+    .copyright .common-wrap{padding-left: 20px;}
+    .copyright p{font-size: 19px; text-align: center;float: none}
+    .admin-info .content-item,.admin-info .content-item:nth-child(4n+1),.admin-info .content-item:nth-child(4n+4){width: 100%; margin: 0 auto; float: none; padding: 30px 0 0 0}
+    .admin-info{padding:0 20px 30px}
+    .retailer-admin-content{padding-bottom: 30px;}
+    .info-row em{float: left;display: block; visibility: visible; height: auto;opacity: 1; clear: both; display: block; width: auto; margin-top: 15px;}
+    .current-application-content .title-bar{display: none}
+    .info-row{padding:20px; display: block}
+    .info-row div,.info-row div:nth-child(2),.info-row div:nth-child(4),.info-row div:nth-child(6),.info-row div:nth-child(8),.info-row div:nth-child(10),.info-row div:nth-child(12),.info-row div:nth-child(14),.info-row div:nth-child(16){float: right; width: auto; display: block}
+    .info-row:first-child div span,.info-row div span{padding: 0; margin-top: 10px;display: block}
+   /* div.close-icon{margin: 10px 0 0 0}*/
+    .info-row div:before{display: none}
+    .info-row div:nth-child(14){padding-left: 0px;}
+    .info-row div span dfn{display: block}
+    .current-application-content .title-text h2{font-size: 32px;}
+    .content-info{padding-top: 35px;}
+    .current-application-content{padding-bottom: 40px;}
+    .info-row div.close{margin-top: 14px;}
+    div.close-icon{margin-top: 0; top: auto}
+    .my-lenders-content .info-row{padding: 10px 20px;position: relative}
+    .my-lenders-content .info-row div:first-child,.my-lenders-content .info-row div:nth-child(2),.my-lenders-content .info-row div:nth-child(3){width: 100%; padding: 0;}
+    .my-lenders-content .info-row div:nth-child(4){position: absolute; right: 10px; top: 0px; width: 25px;}
+    .my-lenders-content .info-row:first-child div span,.my-lenders-content .info-row div span{padding: 0;}
+    .my-lenders-content .info-row div:nth-child(2):before, .my-lenders-content .info-row div:nth-child(3):before, .my-lenders-content .info-row div:nth-child(4):before{display: none;}
+    .my-lenders-content .info-row:first-child div span, .my-lenders-content .info-row div span{text-align: center}
+    .my-lenders-content .info-row div:nth-child(4) div.close-icon{width: 25px;}
+    .my-lenders-content .info-row div:first-child span{padding: 0;}
+    .my-lenders-content .info-row div span a{font-size: 11px;line-height: 16px;}
+    h5{font-size: 20px}
+    .title-bar h5{float: none; text-align: center; font-size: 16px; line-height: 22px;}
+    .my-lenders-content .content-info{padding-top: 35px}
+    .content-wrap,.content-text  { float: left; width: 100%; padding-top: 10px; }
+    .content-text {  padding: 0; text-align: center;}
+    .content-text p { padding-top: 15px}
+    .content-text ol{text-align: left}
+    .content-text ol li { padding-top: 12px; list-style: none; font-weight: 500; float: none; text-align: center; }
+    .content-text ol li:before{font-size: 18px}
+    .thum-nail-wrap{float:left; width: 100%; padding-top:30px}
+    .login-here{padding-top:20px}
+    .content-box{padding-top:20px}
+    .content{ padding: 30px 20px}
+    .input-row,.input-row:nth-child(2n+1) {float:left; width:100%;margin: 20px 0 0 0}
+    .input-row:nth-child(-n+2){margin-top:15px}
+    .input-row:first-child{margin-top: 0px;}
+    .content label{padding-top:0px}
+    .submit-wrap{text-align: center; margin-left: 0}
+    .input-row input[type="submit"]{float: none; width: 191px}
+    .find-dealers .content p { text-align: center}
+    .find-dealers .submit-wrap { padding-top: 18px; margin-left: 0; margin-top: 0; }
+    .find-dealers .input-row { float: left; width: 100%; padding-top: 0; margin-top:10px; margin-right: 0; margin-left: 0; padding-left: 0;padding:0 10px }
+    .find-dealers .input-row input[type="tel"]{width:100%}
+    .find-dealers .content-box button{margin-top:20px}
+    .dealer-content .title-text h2{font-size: 25px;}
+    .content-text h4{font-size: 20px;line-height: 24px;}
+    .content-text ol{padding-top: 15px;}
+    .thum-nail-wrap a.yellow-btn{width: 280px;font-size: 18px; height: 50px; padding: 0; line-height: 48px;}
+    .dealer-content{padding-bottom: 30px;}
+    .thum-nail-wrap .btn-wrap{padding-top: 30px;}
+    .account-setting .content-inner{margin-top: 30px;}
+    .input-row label{font-size: 16px;}
+    .find-dealers .content{padding: 30px 20px;}
+    .dealer-submit-wrap .input-row,.dealer-submit-wrap{max-width: 100%;width: 100%;}
+    .dealer-submit-wrap .submit-wrap input[type="submit"], .retailer-register .input-row input[type="submit"]{width: 100%; margin: 20px 0 0 0}
+    .dealer-submit-wrap .submit-wrap input[type="submit"]{width: 160px; float: left; margin-top: 10px;}
+    .button-wrap button{margin-left: 14px;float: none; text-align: center}
+    .content dfn{float: none; text-align: center;display: inline-block; }
+    .button-wrap{width: 100%; text-align: center; }
+    .find-dealers .content-inner,.add-lender-content .content-inner,.company-info .content-inner{margin-top: 30px;}
+    .retailer-register .content-inner{margin-top: 30px;}
+    .file-select div{margin: 20px 0 0 0; width: 100%;}
+    .file-select div span{margin: 0; width: 100%}
+    .retailer-register2 .input-row.submit-wrap{margin-top: 10px; width: 100%;}
+    .add-lender-content .input-row{margin-top: 20px;}
+    .add-lender-content .input-row:first-child{margin-top: 0px;}
+    .retailer-register2 .content{padding-top: 30px;}
+    .retailer-register2 .input-row{margin-top: 20px;}
+    .input-row input[type="submit"],.account-setting .content input[type="submit"]{width: 100%; height: 40px; line-height: 40px; margin-top: 10px; font-size: 18px;}
+    .company-info .input-row:nth-of-type(-n+2){margin-top: 20px;}
+    .company-info .input-row:first-child{margin-top: 0px;}
+    .company-info .content{padding-top: 30px;}
+    .company-info .input-row{margin-top: 20px;}
+    .company-info .input-row.submit-wrap{margin-top: 0px;}
+    .company-info  .file-select{margin-top: 30px;text-align: center}
+    .company-info,.retailer-register2,.retailer-register,.my-lenders-content,.find-dealers{padding-bottom: 40px;}
+    .input-row figure{float: none; margin: 0 auto; overflow: hidden;margin-top: 20px;}
+    .file-select p{float: none; text-align: center; width: 100%}
+    .title-bar,.retailer-register2 .title-bar, .add-lender-content .title-bar,.retailer-register .title-bar,.retailer-register .title-bar, .account-setting .title-bar, .find-dealers .title-bar{padding-left: 15px; padding-right: 15px;}
+    .phone-number,.extension{width: 100%;margin-left: 0px;}
+    .current-application-content .content-inner{margin-top: 0px;}
+    .my-lenders-content .content-inner:nth-child(3){margin-top: 30px;}
+    .main-nav ul li a{font-size: 20px;}
+
+    .input-row input[type="text"], .input-row input[type="email"], .input-row input[type="password"], .input-row input[type="search"], input[type="search"],  .input-row .selectric, .input-row .selectric .label, .file-select > div > span, .button-wrap button, .admin-info .content-item a.transparent-btn{height: 40px; font-size: 15px; padding: 0 20px;}
+    .input-row .selectric .button{background-position: center center; background-size: 10px;}
+    .input-row .selectric{padding: 0;}
+    .input-row .selectric .label, .file-select > div > span, .button-wrap button, .admin-info .content-item a.transparent-btn{line-height: 38px;}
+    .button-wrap button{font-size: 20px;}
+    .footer-nav ul li a{font-size: 16px; line-height: 22px;}
+    
+    .retailer-admin-content a.btn{width: 210px;}
+    .retailer-register .input-row input[type="submit"]{margin-top: 10px;}
+    
+    .forgot-area .input-row{max-width: 100%;}
+    .forgot-area .submit-wrap{margin-left: 0; clear: both;}
+    .forgot-area .submit-wrap input[type="submit"]{margin-top: 0;}
+    .login-content .content-inner{margin-top: 30px;}
+    .forgot-area{padding-top: 35px;}
+
+    
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .input-row input[type="submit"],.account-setting .content input[type="submit"]{width: 280px;}
+    .my-lenders-content .info-row div span a{font-size: 15px;}
+    .retailer-admin-content a.btn, .dealer-submit-wrap .submit-wrap input[type="submit"], .retailer-register .input-row input[type="submit"]{width: 280px;}
+    
+
+    .forgot-area .input-row{max-width: 100%; width: 80%; width: -webkit-calc(100% - 125px); width: calc(100% - 125px);}
+    .forgot-area .submit-wrap{margin-left: 15px; clear: none; width: 110px;}
+    .forgot-area .input-row:nth-child(2){margin-top: 42px;}
+
+
+}
+
+
+/*		Tablet Layout: 768px.
+-----------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    input[type="text"],input[type="email"],input[type="tel"],input[type="search"],input[type="number"],input[type="submit"],input[type="password"],select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none; border-radius: 0}
+    
+    .logo-wrap{width: 296px;}
+    .main-logo h4{font-size: 19px;}
+    .main-nav ul li{margin: 0 9px}
+    .content-item { padding: 24px 0 70px;}
+    .content-item:before{left: -20px;}
+	.footer-logo { width: 44.25%;}
+    .footer-nav{padding-left: 50px;}
+    .admin-info .content-item, .admin-info .content-item:nth-child(4n+1){width: 47%; margin: 0 3%;}
+    .admin-info .content-item:nth-child(2n+1){margin-left: 0;}
+    .admin-info .content-item:nth-child(2n+2){margin-right: 0;}
+ /*.info-row div:*/
+    .info-row div:nth-child(2){width: 15%}
+    .info-row div:nth-child(even) span a.submit-now{width: 100%}
+    .info-row{padding: 0 20px;}
+    .info-row div:nth-child(14){width: 22%}
+    .info-row div:nth-child(16):before{left: 0;}
+    .info-row div span a.submit-now{padding: 5px 0; font-size: 13px;}
+  /*  div.close-icon{margin-top: 32px;}*/
+    .title-bar span{font-size: 12px;}
+    .title-bar span:first-child { width: 14.760908%;}
+    .title-bar span:nth-child(8) { width: 9.108202%; text-align: right}
+    .info-row div span a.view-list{font-size: 12px;}
+    .info-row div span a{font-size: 12px;}
+    .my-lenders-content .info-row div:nth-child(2) { padding-left: 2.578947%;}
+    .file-select > div{margin: 20px 0 0 0}
+    .add-lender-content .input-row:nth-child(2n+1){clear: both}
+    .retailer-register2 .input-row.submit-wrap{clear: none; margin-left: 35px; margin-top: 92px}
+    .design-icon{left: 50px;}
+    .encryption-info{padding-right: 150px; padding-left: 150px;}
+    .company-info .input-row.submit-wrap{margin-top: 0px;clear:none}
+    .title-bar span:nth-child(5) { width: 10.860384%;}
+    .main-nav ul li a{font-size: 20px;}
+    
+    .current-application-content, .retailer-admin-content, .main-content-section{padding-bottom: 60px;}
+
+    div.close-icon{float: right; width: 25px; height: 25px; cursor: pointer; position: relative; top: 50%; margin-top: -12.5px; display: block; vertical-align: middle;}
+    div.close-icon img{float: left; width: 100%;  margin-top: 12.5px;}
+
+    
+}
+
+
+/*		Tablet Layout: 1024px.
+-----------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+    input[type="text"],input[type="email"],input[type="tel"],input[type="search"],input[type="number"],input[type="submit"],input[type="password"],select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none; border-radius: 0}
+	.footer-logo { width: 44.25%;}
+    .footer-nav{padding-left: 50px;}
+    .admin-info .content-item .title-text{min-height: 145px;}
+    .title-bar span:first-child { width: 17.760908%;}
+    .my-lenders-content .info-row div:nth-child(2){padding-left: 3.58%}
+  .title-bar span:nth-child(5) { width: 10.860384%;}
+  .info-row div:nth-child(2),.title-bar span:first-child{width: 15%}
+  .info-row div:nth-child(even) span a.submit-now{width: 100%}
+  .info-row{padding: 0 20px;}
+  .info-row div:nth-child(14){width: 22%}
+  .info-row div:nth-child(16):before{left: 0;}
+  .info-row div span a.submit-now{padding: 5px 0; font-size: 13px;}
+  .current-application-content, .retailer-admin-content, .main-content-section{padding-bottom: 80px;}
+
+  div.close-icon{float: right; width: 25px; height: 25px; cursor: pointer; position: relative; top: 50%; margin-top: -12.5px; display: block; vertical-align: middle;}
+div.close-icon img{float: left; width: 100%;  margin-top: 12.5px;}
+}
+
+
+
+
+
+
+
+
